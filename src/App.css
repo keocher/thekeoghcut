@@ -1,14 +1,18 @@
 #root {
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .shell {
   position: relative;
+  width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
-  padding: clamp(1.25rem, 3vw, 2.5rem);
-  overflow: hidden;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  overflow-x: clip;
+  overflow-y: auto;
 }
 
 .film-grain {
@@ -62,6 +66,7 @@
   position: relative;
   z-index: 1;
   width: min(100%, 70rem);
+  margin: 0 auto;
   padding: clamp(1.75rem, 4vw, 3.5rem);
   border: 1px solid rgba(113, 84, 56, 0.18);
   border-radius: 0.45rem;
@@ -268,20 +273,56 @@ h1 {
 }
 
 @media (max-width: 760px) {
+  .shell {
+    place-items: start center;
+    padding: 0.9rem;
+  }
+
   .hero {
+    width: min(100%, 34rem);
+    padding: 1.1rem;
     border-radius: 0.35rem;
   }
 
+  .masthead {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 14vw, 3.6rem);
+    line-height: 0.95;
+  }
+
   .subtitle {
-    padding-left: clamp(0.6rem, 4vw, 1.5rem);
+    padding-left: clamp(0.4rem, 4vw, 1.25rem);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
   }
 
   .portal-grid {
+    gap: 0.8rem;
+    margin-top: 1.35rem;
     grid-template-columns: 1fr;
   }
 
   .portal {
-    min-height: 12rem;
+    min-height: 10.25rem;
+    padding: 1.15rem;
+  }
+
+  .portal-label {
+    font-size: clamp(1.7rem, 10vw, 2.25rem);
+  }
+
+  .portal-copy,
+  .first-time-copy {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .first-time {
+    margin-top: 1.1rem;
+    padding-top: 1rem;
   }
 }
 
