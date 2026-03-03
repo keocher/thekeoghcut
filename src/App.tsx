@@ -4,14 +4,12 @@ const destinations = [
   {
     label: 'Request',
     href: 'https://request.thekeoghcut.com',
-    service: 'Seerr',
-    description: 'Drop new requests into the queue and keep the server fed.',
+    description: 'feed the hungry server',
   },
   {
     label: 'Watch',
     href: 'https://app.plex.tv',
-    service: 'Plex',
-    description: 'Open the library, pick something good, and start streaming.',
+    description: 'get some popcorn bitch',
   },
 ]
 
@@ -22,12 +20,8 @@ function App() {
       <div className="ambient ambient-right" aria-hidden="true" />
 
       <section className="hero">
-        <p className="eyebrow">THEKEOGHCUT</p>
-        <h1>Your personal server, one clean front door.</h1>
-        <p className="intro">
-          Fast access to the two places that matter: request what is missing or
-          jump straight into the stream.
-        </p>
+        <h1>thekeoghcut</h1>
+        <p className="subtitle">hosted by HAL9000</p>
 
         <div className="portal-grid">
           {destinations.map((destination, index) => (
@@ -38,7 +32,6 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="portal-service">{destination.service}</span>
               <span className="portal-label">{destination.label}</span>
               <span className="portal-copy">{destination.description}</span>
               <span className="portal-arrow" aria-hidden="true">

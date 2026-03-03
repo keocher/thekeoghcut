@@ -1,6 +1,6 @@
 :root {
-  --font-body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --font-body: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", monospace;
+  --font-display: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", monospace;
   --color-text-strong: #f4f5ef;
   --color-text-soft: rgba(231, 236, 239, 0.82);
   --color-muted: rgba(210, 220, 225, 0.62);
