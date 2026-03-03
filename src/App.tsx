@@ -54,7 +54,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              app.plex.tv/auth/
+              https://www.plex.tv/sign-up
             </a>
             .
           </p>
