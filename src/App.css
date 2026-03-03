@@ -11,6 +11,25 @@
   overflow: hidden;
 }
 
+.film-grain {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 244, 214, 0.045) 0.06rem, transparent 0.08rem),
+    radial-gradient(circle at 80% 35%, rgba(255, 244, 214, 0.03) 0.04rem, transparent 0.08rem),
+    repeating-linear-gradient(
+      0deg,
+      rgba(17, 11, 7, 0.04) 0,
+      rgba(17, 11, 7, 0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  background-size: 11rem 11rem, 9rem 9rem, 100% 4px;
+  opacity: 0.55;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
 .ambient {
   position: absolute;
   inset: auto;
@@ -26,16 +45,16 @@
   top: 6%;
   left: -8%;
   background:
-    radial-gradient(circle at 35% 35%, rgba(255, 193, 94, 0.9), transparent 45%),
-    radial-gradient(circle at 70% 60%, rgba(220, 93, 58, 0.6), transparent 55%);
+    radial-gradient(circle at 35% 35%, rgba(183, 126, 78, 0.45), transparent 45%),
+    radial-gradient(circle at 70% 60%, rgba(88, 51, 28, 0.5), transparent 55%);
 }
 
 .ambient-right {
   right: -10%;
   bottom: 10%;
   background:
-    radial-gradient(circle at 30% 35%, rgba(68, 191, 173, 0.9), transparent 42%),
-    radial-gradient(circle at 70% 68%, rgba(31, 116, 181, 0.6), transparent 58%);
+    radial-gradient(circle at 30% 35%, rgba(117, 88, 63, 0.42), transparent 42%),
+    radial-gradient(circle at 70% 68%, rgba(52, 32, 18, 0.48), transparent 58%);
   animation-delay: -7s;
 }
 
@@ -44,15 +63,16 @@
   z-index: 1;
   width: min(100%, 70rem);
   padding: clamp(1.75rem, 4vw, 3.5rem);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
+  border: 1px solid rgba(225, 197, 154, 0.12);
+  border-radius: 0.85rem;
   background:
-    linear-gradient(135deg, rgba(10, 19, 33, 0.92), rgba(12, 35, 52, 0.72)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 35%);
+    linear-gradient(135deg, rgba(16, 11, 8, 0.95), rgba(28, 21, 15, 0.88)),
+    linear-gradient(180deg, rgba(222, 196, 153, 0.05), transparent 35%);
   box-shadow:
-    0 2rem 5rem rgba(2, 7, 20, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px);
+    0 2rem 5rem rgba(4, 3, 2, 0.55),
+    inset 0 1px 0 rgba(241, 220, 190, 0.05),
+    inset 0 0 0 1px rgba(37, 24, 14, 0.4);
+  backdrop-filter: blur(14px);
   animation: settle 700ms ease-out both;
 }
 
@@ -62,10 +82,11 @@
   inset: 0;
   border-radius: inherit;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 3.5rem 3.5rem;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 78%);
+    linear-gradient(rgba(226, 203, 171, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(226, 203, 171, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at top right, rgba(245, 228, 196, 0.05), transparent 32%);
+  background-size: 3.5rem 3.5rem, 3.5rem 3.5rem, 100% 100%;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 88%);
   pointer-events: none;
 }
 
@@ -83,14 +104,15 @@ h1 {
   line-height: 0.9;
   letter-spacing: -0.03em;
   color: var(--color-text-strong);
+  text-shadow: 0.06em 0.06em 0 rgba(44, 28, 16, 0.45);
 }
 
 .subtitle {
   margin: 0.85rem 0 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-text-soft);
+  color: rgba(215, 194, 162, 0.78);
 }
 
 .portal-grid {
@@ -106,11 +128,11 @@ h1 {
   gap: 0.55rem;
   min-height: 15rem;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1.5rem;
+  border: 1px solid rgba(226, 198, 158, 0.1);
+  border-radius: 0.55rem;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    rgba(255, 255, 255, 0.03);
+    linear-gradient(180deg, rgba(231, 207, 173, 0.06), rgba(231, 207, 173, 0.015)),
+    rgba(32, 22, 15, 0.75);
   color: inherit;
   text-decoration: none;
   overflow: hidden;
@@ -139,21 +161,21 @@ h1 {
 .portal:hover,
 .portal:focus-visible {
   transform: translateY(-0.35rem);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 1.5rem 3rem rgba(3, 8, 20, 0.35);
+  border-color: rgba(235, 209, 168, 0.22);
+  box-shadow: 0 1.5rem 3rem rgba(6, 4, 2, 0.4);
 }
 
 .portal:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline: 2px solid rgba(230, 206, 170, 0.25);
   outline-offset: 0.25rem;
 }
 
 .portal-1::before {
-  background: linear-gradient(90deg, #ff9f4a, #f15f4c);
+  background: linear-gradient(90deg, #9f6e40, #c08d54);
 }
 
 .portal-2::before {
-  background: linear-gradient(90deg, #53d3bc, #3e8dff);
+  background: linear-gradient(90deg, #6f5a40, #a18862);
 }
 
 .portal-label {
@@ -167,14 +189,52 @@ h1 {
   max-width: 20ch;
   font-size: 0.98rem;
   line-height: 1.6;
-  color: var(--color-text-soft);
+  color: rgba(222, 204, 180, 0.78);
 }
 
 .portal-arrow {
   margin-top: auto;
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--color-text-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(245, 229, 204, 0.9);
+}
+
+.first-time {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.55rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+  padding: 1.35rem 1rem 0 1rem;
+  border-top: 1px solid rgba(222, 196, 157, 0.08);
+  text-align: center;
+}
+
+.first-time-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(240, 220, 189, 0.9);
+}
+
+.first-time-copy {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(219, 199, 169, 0.76);
+}
+
+.first-time-link {
+  color: rgba(246, 230, 203, 0.94);
+  text-decoration: underline;
+  text-decoration-color: rgba(246, 230, 203, 0.4);
+  text-underline-offset: 0.18em;
 }
 
 @keyframes drift {
@@ -202,7 +262,7 @@ h1 {
 
 @media (max-width: 760px) {
   .hero {
-    border-radius: 1.5rem;
+    border-radius: 0.75rem;
   }
 
   .portal-grid {

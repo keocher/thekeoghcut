@@ -16,6 +16,7 @@ const destinations = [
 function App() {
   return (
     <main className="shell">
+      <div className="film-grain" aria-hidden="true" />
       <div className="ambient ambient-left" aria-hidden="true" />
       <div className="ambient ambient-right" aria-hidden="true" />
 
@@ -40,6 +41,22 @@ function App() {
             </a>
           ))}
         </div>
+
+        <section className="first-time" aria-label="First time setup">
+          <p className="first-time-title">First Time?</p>
+          <p className="first-time-copy">
+            Create a Plex account first at{' '}
+            <a
+              className="first-time-link"
+              href="https://app.plex.tv/auth/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              app.plex.tv/auth/
+            </a>
+            .
+          </p>
+        </section>
       </section>
     </main>
   )
