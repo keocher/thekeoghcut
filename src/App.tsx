@@ -21,8 +21,10 @@ function App() {
       <div className="ambient ambient-right" aria-hidden="true" />
 
       <section className="hero">
-        <h1>thekeoghcut</h1>
-        <p className="subtitle">hosted by HAL9000</p>
+        <div className="masthead">
+          <h1>thekeoghcut</h1>
+          <p className="subtitle">hosted by HAL9000</p>
+        </div>
 
         <div className="portal-grid">
           {destinations.map((destination, index) => (

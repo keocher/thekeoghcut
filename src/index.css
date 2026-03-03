@@ -1,11 +1,11 @@
 :root {
-  --font-body: "Courier Prime", "American Typewriter", "Courier New", "Nimbus Mono PS", "Liberation Mono", monospace;
-  --font-display: "Courier Prime", "American Typewriter", "Courier New", "Nimbus Mono PS", "Liberation Mono", monospace;
-  --color-text-strong: #efe0c6;
-  --color-text-soft: rgba(220, 201, 171, 0.82);
-  --color-muted: rgba(191, 169, 135, 0.62);
-  --color-bg-top: #090604;
-  --color-bg-bottom: #1b130d;
+  --font-body: "JetBrains Mono", "Courier Prime", "American Typewriter", "Courier New", "Nimbus Mono PS", "Liberation Mono", monospace;
+  --font-display: "JetBrains Mono", "Courier Prime", "American Typewriter", "Courier New", "Nimbus Mono PS", "Liberation Mono", monospace;
+  --color-text-strong: #2f2014;
+  --color-text-soft: rgba(72, 53, 37, 0.82);
+  --color-muted: rgba(96, 72, 49, 0.62);
+  --color-bg-top: #7c6045;
+  --color-bg-bottom: #caa57a;
 
   font-family: var(--font-body);
   line-height: 1.5;
@@ -31,9 +31,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(130, 88, 53, 0.2), transparent 30%),
-    radial-gradient(circle at 82% 18%, rgba(80, 57, 35, 0.18), transparent 24%),
-    radial-gradient(circle at 50% 120%, rgba(68, 47, 29, 0.25), transparent 34%),
+    radial-gradient(circle at top left, rgba(245, 228, 196, 0.36), transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(172, 128, 86, 0.22), transparent 24%),
+    radial-gradient(circle at 50% 120%, rgba(154, 110, 68, 0.24), transparent 34%),
     linear-gradient(160deg, var(--color-bg-top), var(--color-bg-bottom));
 }
 
