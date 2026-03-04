@@ -56,6 +56,7 @@ const houseRules = [
   'Do not share ANY of these links.',
   'Do not give ANYONE access to your account.',
   'Request only movies you are planning to watch. Unless you want to buy me a massive 8TB harddrive.',
+  'Have Multi-Factor Authentication enabled, especially if you didn\'t sign in with Apple (Google doesn\'t enforce MFA).'
 ]
 
 const faqItems: FaqItem[] = [
