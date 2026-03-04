@@ -217,8 +217,8 @@ function ManualPage() {
               >
                 here
               </a>
-              . Please don&apos;t sign in with Apple or Google, make an account
-              with email and password.
+              . Preferably sign in with Apple .... or Google🤢. You can use email and password 
+              also but you will have to follow the password rules below. Plex doesn't enforce strong enough passwords.
             </p>
             <p className="manual-paragraph">
               After you&apos;ve created an account you should be redirected to{' '}
