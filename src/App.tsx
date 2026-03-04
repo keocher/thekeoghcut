@@ -230,7 +230,7 @@ function ManualPage() {
               >
                 app.plex.tv
               </a>
-              . Make sure you are signed in, you might need to sign in again. Then make sure you go to your account settings and under account->security, enable two factor authentication. "OOOOOO but then I have to enter a code every once in a while". Get over it.
+              . Make sure you are signed in, you might need to sign in again. Then make sure you go to your account settings and under account, then security, enable two factor authentication. "OOOOOO but then I have to enter a code every once in a while". Get over it.
             </p>
 
             <div className="manual-callout">
