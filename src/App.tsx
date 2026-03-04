@@ -35,8 +35,7 @@ const destinations: Destination[] = [
 
 const passwordRules = [
   'At least 12 characters',
-  'At least 3 numbers',
-  'At least 2 capitals',
+  'A mix of special characters, numbers, and capitals',
   'Not a reused password',
   'Not saved on your computer in a file called mypasswords.txt like an idiot.',
 ]
@@ -231,7 +230,7 @@ function ManualPage() {
               >
                 app.plex.tv
               </a>
-              . Make sure you are signed in, you might need to sign in again.
+              . Make sure you are signed in, you might need to sign in again. Then make sure you go to your account settings and under account->security, enable two factor authentication. "OOOOOO but then I have to enter a code every once in a while". Get over it.
             </p>
 
             <div className="manual-callout">
